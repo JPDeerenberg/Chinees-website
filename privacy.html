@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jouw Geniale Website | De WordPress Killer</title>
+    <meta
+      name="description"
+      content="Hier een tekst van ongeveer 150 tekens die mensen overtuigt om te klikken in plaats van door te scrollen naar je concurrent."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.jouwdomein.nl/" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jouw Geniale Website | Handgecodeerd Meesterwerk"
+    />
+    <meta
+      property="og:description"
+      content="Weg met WordPress. Puur Tailwind vakmanschap. Klik hier voor echte snelheid."
+    />
+    <meta
+      property="og:image"
+      content="https://www.jouwdomein.nl/assets/og-image.jpg"
+    />
+    <meta property="og:url" content="https://www.jouwdomein.nl/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jouw Geniale Website" />
+    <meta
+      name="twitter:description"
+      content="Geen plugins, alleen pure code en een flinke dosis eigenwijsheid."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.jouwdomein.nl/assets/og-image.jpg"
+    />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-800 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-white/10 h-16 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 h-full"
+      >
+        <a href="/" class="flex items-center gap-2 group">
+          <img
+            src="./assets/logo.jpg"
+            alt="Logo"
+            class="h-8 w-auto rounded-sm transition-transform duration-300 group-hover:scale-110"
+          />
+          <span
+            class="font-black text-xl text-white tracking-tighter hidden sm:block"
+            >NAAM</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            href="index.html"
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            >About</a
+          >
+          <a
+            href="services.html"
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            >Services</a
+          >
+          <a
+            href="faq.html"
+            class="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
+            >FAQ</a
+          >
+
+          <a
+            href="contact.html"
+            class="bg-sky-600 hover:bg-sky-500 px-5 py-2 rounded-full text-white text-sm font-bold transition-all shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 active:scale-95"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-white p-2 focus:outline-none z-50"
+        >
+          <svg
+            id="icon-open"
+            class="w-7 h-7 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+          <svg
+            id="icon-close"
+            class="w-7 h-7 hidden transition-transform duration-300 rotate-90"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Div for JS-->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-40 bg-gray-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-2xl font-bold text-white transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) translate-x-full pt-16"
+    >
+      <a
+        href="index.html"
+        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
+        >Home</a
+      >
+      <a
+        href="about.html"
+        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
+        >About</a
+      >
+      <a
+        href="services.html"
+        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
+        >Services</a
+      >
+      <a
+        href="faq.html"
+        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
+        >FAQ</a
+      >
+      <a
+        href="contact.html"
+        class="text-sky-500 hover:text-sky-400 transition-colors transform hover:scale-110 duration-200"
+        >Contact</a
+      >
+    </div>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 text-gray-300 leading-relaxed">
+      <h1 class="text-4xl font-black text-white mb-8 tracking-tighter">
+        Privacyverklaring
+      </h1>
+
+      <p class="mb-6">
+        Welkom op de meest saaie pagina van deze website. Omdat ik privacy
+        serieus neem (en een hekel heb aan complexe databases), verwerk ik zo
+        min mogelijk gegevens. Hieronder lees je precies hoe dat zit.
+      </p>
+
+      <section class="space-y-8">
+        <div>
+          <h2 class="text-xl font-bold text-white mb-2">1. Wie ben ik?</h2>
+          <p>
+            Deze website wordt beheerd door
+            <strong>[JOUW NAAM/BEDRIJFSNAAM]</strong>. Heb je vragen over je
+            data? Stuur dan een mailtje naar
+            <a
+              href="mailto:info@jouwsite.nl"
+              class="text-sky-500 hover:underline"
+              >info@jouwsite.nl</a
+            >.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-2">
+            2. Welke gegevens verwerk ik?
+          </h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>
+              <span class="text-white font-medium">Contactgegevens:</span> Als
+              je het contactformulier invult, ontvang ik je naam en e-mailadres.
+              Dit is nodig om je terug te kunnen schelden... eh, mailen.
+            </li>
+            <li>
+              <span class="text-white font-medium">Technische gegevens:</span>
+              De server waar deze site op staat (bijv. GitHub Pages/Netlify)
+              logt je IP-adres. Dit is noodzakelijk voor de beveiliging en om te
+              tellen hoeveel mensen mijn werk bewonderen.
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 bg-gray-900 border border-sky-500/20 rounded-2xl">
+          <h2 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+            <span>3. Cookies?</span>
+            <span
+              class="text-xs bg-sky-600 text-white px-2 py-1 rounded-full uppercase"
+              >Trotsvrij</span
+            >
+          </h2>
+          <p>
+            Ik gebruik <strong>geen cookies</strong>. Geen tracking cookies,
+            geen marketing cookies, en ook geen functionele cookies. Ik heb geen
+            analytics-scripts van derden die je over het hele internet
+            achtervolgen. Je bent hier veilig.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-2">
+            4. Wat gebeurt er met je data?
+          </h2>
+          <p>
+            Je gegevens worden niet verkocht aan vage advertentieboeren of
+            opgeslagen in een onveilige Excel-sheet. De data uit het
+            contactformulier wordt alleen gebruikt om contact met je op te nemen
+            en wordt na verloop van tijd verwijderd.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-2">5. Jouw rechten</h2>
+          <p>
+            Je hebt het recht om je gegevens in te zien, te corrigeren of te
+            laten verwijderen. Aangezien ik vrijwel niets van je weet, zal dit
+            een kort gesprek worden, maar ik werk er graag aan mee.
+          </p>
+        </div>
+      </section>
+
+      <footer
+        class="mt-12 pt-8 border-t border-white/5 text-sm text-gray-500 italic"
+      >
+        Laatst bijgewerkt op: 24 december 2025.
+      </footer>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="./assets/logo.jpg"
+                alt="Logo"
+                class="h-6 w-auto grayscale brightness-200"
+              />
+              <span class="text-white font-black tracking-tighter text-lg"
+                >NAAM</span
+              >
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wij bouwen handgecodeerde meesterwerken met Tailwind. Geen
+              WordPress-meuk, alleen pure snelheid en passie.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-xs tracking-widest"
+            >
+              Navigatie
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-sky-500 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-sky-500 transition-colors"
+                  >Over Ons</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="hover:text-sky-500 transition-colors"
+                  >Diensten</a
+                >
+              </li>
+              <li>
+                <a href="faq.html" class="hover:text-sky-500 transition-colors"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-xs tracking-widest"
+            >
+              Rechtshulp
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="privacy.html"
+                  class="hover:text-sky-500 transition-colors"
+                  >Privacybeleid</a
+                >
+              </li>
+              <li>
+                <a
+                  href="voorwaarden.html"
+                  class="hover:text-sky-500 transition-colors"
+                  >Algemene Voorwaarden</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-xs tracking-widest"
+            >
+              Contact
+            </h4>
+            <p class="text-sm mb-4 italic">
+              Vragen? Stuur ons een duif of een mailtje.
+            </p>
+            <a
+              href="mailto:info@jouwsite.nl"
+              class="text-white font-medium hover:text-sky-500 transition-colors"
+              >info@jouwsite.nl</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs"
+        >
+          <p>&copy; 2025 NAAM. Alle rechten voorbehouden.</p>
+          <div class="flex gap-6 uppercase tracking-widest">
+            <span class="text-white/20">Handgecodeerd in NL</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
