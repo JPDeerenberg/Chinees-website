@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bram & Joris Chinees Project website</title>
+    <title>Made in China - Bram & Joris</title>
     <meta
       name="description"
-      content="Hier een tekst van ongeveer 150 tekens die mensen overtuigt om te klikken in plaats van door te scrollen naar je concurrent."
+      content="Alles wat je moet weten over de 'Made in China' label, van productie tot ethiek. Een project van Bram & Joris."
     />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-800 flex flex-col min-h-screen">
-    <!-- Navbar -->
+  <body class="bg-gray-800 flex flex-col min-h-screen font-sans text-gray-100">
     <nav
-      class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-white/10 h-16 transition-all duration-300"
+      class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-white/10 h-16 transition-all duration-300"
     >
       <div
         class="max-w-7xl mx-auto flex items-center justify-between px-6 h-full"
@@ -24,10 +23,11 @@
             src="./assets/logo.png"
             alt="Logo"
             class="h-8 w-auto rounded-sm transition-transform duration-300 group-hover:scale-110"
+            onerror="this.style.display='none'"
           />
           <span
             class="font-black text-xl text-white tracking-tighter hidden sm:block"
-            >Bram & Joris Chinees Project website</span
+            >MADE IN CHINA</span
           >
         </a>
 
@@ -40,7 +40,7 @@
           <a
             href="about.html"
             class="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-sky-500 after:transition-all hover:after:w-full"
-            >About</a
+            >Over Ons</a
           >
           <a
             href="contact.html"
@@ -85,7 +85,6 @@
       </div>
     </nav>
 
-    <!-- Div for JS-->
     <div
       id="mobile-menu"
       class="fixed inset-0 z-40 bg-gray-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-2xl font-bold text-white transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) translate-x-full pt-16"
@@ -98,7 +97,7 @@
       <a
         href="about.html"
         class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
-        >About</a
+        >Over Ons</a
       >
       <a
         href="contact.html"
@@ -108,33 +107,50 @@
     </div>
 
     <main class="flex-1">
-      <!-- Text Flexbox Hero-->
-      <section class="flex items-center justify-center py-24">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold mb-4">Welcome to My Site</h1>
-          <p class="text-gray-700 max-w-xl mx-auto">
-            This is a simple text-based flexbox section. Add more content or
-            buttons below.
+      <section
+        class="flex items-center justify-center py-24 bg-gradient-to-b from-gray-800 to-gray-900"
+      >
+        <div class="text-center px-4">
+          <h1
+            class="text-4xl md:text-6xl font-black mb-6 text-white tracking-tight"
+          >
+            Het Verhaal van <span class="text-sky-500">Made in China</span>
+          </h1>
+          <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+            Van massaproductie tot technologische innovatie. Ontdek hoe één
+            label de wereldeconomie heeft veranderd.
+          </p>
+          <div class="mt-8 flex justify-center gap-4">
+            <a
+              href="#info"
+              class="px-6 py-3 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-500 transition shadow-lg hover:shadow-sky-500/25"
+            >
+              Lees Meer
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex items-center justify-center py-16 bg-gray-900/50">
+        <div class="text-center px-4">
+          <h2 class="text-2xl font-bold mb-4 text-white">
+            Waarvoor dient deze website?
+          </h2>
+          <p class="text-gray-400 max-w-xl mx-auto">
+            Deze website is gemaakt om het bewustzijn te vergroten over het
+            belang, de kwaliteit en de ethiek van producten die het label "Made
+            in China" dragen.
           </p>
         </div>
       </section>
 
-      <!-- Text Flexbox Sub -->
-      <section class="flex items-center justify-center py-24">
-        <div class="text-center">
-          <h2 class="text-2xl font-bold mb-4">waarvoor deze website dient</h2>
-          <p class="text-gray-700 max-w-xl mx-auto">Deze website is gemaakt om het bewustzijn te vergroten over het belang van producten die "made in China" zijn</p>
-        </div>
-      </section>
-
-      <!-- Image-based Flexbox -->
-      <section class="max-w-7xl mx-auto px-6 py-20">
+      <section id="info" class="max-w-7xl mx-auto px-6 py-20">
         <div class="mb-12 text-center">
           <h2 class="text-3xl font-black text-white tracking-tight sm:text-4xl">
-            onze info
+            In de spotlight
           </h2>
           <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-            Hier is wat informatie over onze projecten en werk.
+            Belangrijke thema's die we in dit project behandelen.
           </p>
         </div>
 
@@ -144,14 +160,20 @@
           >
             <img
               src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800"
-              alt="Abstract Design 1"
+              alt="Innovatie"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-900/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+              class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/60 to-transparent opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
             >
-              <h3 class="text-white font-bold text-xl">Project Alpha</h3>
-              <p class="text-gray-300 text-sm">Handgecodeerd meesterschap.</p>
+              <h3
+                class="text-white font-bold text-xl group-hover:text-sky-400 transition-colors"
+              >
+                Innovatie
+              </h3>
+              <p class="text-gray-300 text-sm mt-1">
+                Van copycat naar wereldleider.
+              </p>
             </div>
           </div>
 
@@ -160,14 +182,20 @@
           >
             <img
               src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=800"
-              alt="Abstract Design 2"
+              alt="Economie"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-900/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+              class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/60 to-transparent opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
             >
-              <h3 class="text-white font-bold text-xl">Project Alpha</h3>
-              <p class="text-gray-300 text-sm">Handgecodeerd meesterschap.</p>
+              <h3
+                class="text-white font-bold text-xl group-hover:text-sky-400 transition-colors"
+              >
+                Wereldhandel
+              </h3>
+              <p class="text-gray-300 text-sm mt-1">
+                De fabriek van de wereld.
+              </p>
             </div>
           </div>
 
@@ -176,177 +204,134 @@
           >
             <img
               src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800"
-              alt="Abstract Design 3"
+              alt="Toekomst"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-900/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
+              class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/60 to-transparent opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
             >
-              <h3 class="text-white font-bold text-xl">Project Alpha</h3>
-              <p class="text-gray-300 text-sm">Handgecodeerd meesterschap.</p>
+              <h3
+                class="text-white font-bold text-xl group-hover:text-sky-400 transition-colors"
+              >
+                Toekomst
+              </h3>
+              <p class="text-gray-300 text-sm mt-1">Groene energie en AI.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Buttons with Animations in Flexbox -->
-      <section class="flex justify-center gap-6 py-12">
-        <button
-          class="px-5 py-2 bg-purple-600 text-white rounded-lg transform hover:scale-110 hover:bg-purple-700 transition duration-300"
-        >
-          Hover Scale
-        </button>
-        <button
-          class="px-5 py-2 bg-green-600 text-white rounded-lg hover:translate-y-1 transition transform duration-300"
-        >
-          Hover Move
-        </button>
-        <button
-          class="px-5 py-2 bg-red-600 text-white rounded-lg hover:rotate-3 transition transform duration-300"
-        >
-          Hover Rotate
-        </button>
-      </section>
+      <section class="max-w-7xl mx-auto px-6 py-10 space-y-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <span
+              class="text-sky-500 font-bold tracking-wider uppercase text-sm"
+              >Geschiedenis</span
+            >
+            <h2 class="text-3xl font-black text-white mb-4 mt-2">
+              De Oorsprong van Productie
+            </h2>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+              Onderzoek de ontwikkeling van de productie in China, van de oude
+              ambachten tot de explosie van moderne fabrieken na de openstelling
+              in de jaren '80.
+            </p>
+          </div>
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=800"
+              alt="Chinese Production History"
+              class="relative rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
 
-      <!-- Normal Buttons Flexbox -->
-      <section class="flex justify-center gap-4 py-6">
-        <button
-          class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Primary
-        </button>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1 relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800"
+              alt="Global Economy"
+              class="relative rounded-2xl shadow-2xl"
+            />
+          </div>
+          <div class="order-1 md:order-2">
+            <span
+              class="text-sky-500 font-bold tracking-wider uppercase text-sm"
+              >Economie</span
+            >
+            <h2 class="text-3xl font-black text-white mb-4 mt-2">
+              Impact op de Wereldeconomie
+            </h2>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+              Hoe "Made in China" de wereldhandel domineert. We bespreken de
+              voor- en nadelen van productie-outsourcing en de afhankelijkheid
+              van westerse markten.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <span
+              class="text-sky-500 font-bold tracking-wider uppercase text-sm"
+              >Kwaliteit</span
+            >
+            <h2 class="text-3xl font-black text-white mb-4 mt-2">
+              Kwaliteit en Duurzaamheid
+            </h2>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+              Het stigma van "goedkope troep" is aan het verdwijnen. China maakt
+              nu hoogwaardige tech en is leider in zonnepanelen en EV's.
+            </p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800"
+            alt="Sustainability"
+            class="rounded-2xl shadow-2xl transition hover:scale-[1.02] duration-500"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=800"
+            alt="Chinese Brands"
+            class="rounded-2xl shadow-2xl order-2 md:order-1 transition hover:scale-[1.02] duration-500"
+          />
+          <div class="order-1 md:order-2">
+            <span
+              class="text-sky-500 font-bold tracking-wider uppercase text-sm"
+              >Merken</span
+            >
+            <h2 class="text-3xl font-black text-white mb-4 mt-2">
+              De Opkomst van Supermerken
+            </h2>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+              Merken zoals Xiaomi, Huawei, BYD en DJI veroveren de wereld. Wat
+              is hun geheim en hoe concurreren ze met de gevestigde orde?
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!-- Content Sections -->
-    <section class="max-w-7xl mx-auto px-6 py-20">
-      <!-- Section 1: History -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-        <h2 class="text-3xl font-black text-white mb-4">De Geschiedenis van Chinese Productie</h2>
-        <p class="text-gray-300 mb-4">Onderzoek de ontwikkeling van de productie in China, van de oude ambachten tot moderne fabrieken.</p>
-        <p class="text-gray-400 text-sm">Belangrijke periodes, zoals de openstelling van de Chinese economie in de jaren '80.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=800" alt="Chinese Production History" class="rounded-2xl shadow-2xl"/>
-      </div>
-      </div>
-
-      <!-- Section 2: Global Impact -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Global Economy" class="rounded-2xl shadow-2xl order-2 md:order-1"/>
-        <div class="order-1 md:order-2">
-        <h2 class="text-3xl font-black text-white mb-4">Impact op de Wereldeconomie</h2>
-        <p class="text-gray-300 mb-4">Analyseer hoe "Made in China" de wereldhandel heeft beïnvloed.</p>
-        <p class="text-gray-400 text-sm">Discussieer over de voordelen en nadelen van het produceren in China voor andere landen.</p>
-        </div>
-      </div>
-      </div>
-
-      <!-- Section 3: Quality & Sustainability -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-        <h2 class="text-3xl font-black text-white mb-4">Kwaliteit en Duurzaamheid</h2>
-        <p class="text-gray-300 mb-4">Onderzoek de kwaliteit van Chinese producten in vergelijking met producten uit andere landen.</p>
-        <p class="text-gray-400 text-sm">Behandel de verschuiving naar duurzaamheid in de Chinese industrie en welke stappen worden genomen.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800" alt="Sustainability" class="rounded-2xl shadow-2xl"/>
-      </div>
-      </div>
-
-      <!-- Section 4: Chinese Brands -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=800" alt="Chinese Brands" class="rounded-2xl shadow-2xl order-2 md:order-1"/>
-        <div class="order-1 md:order-2">
-        <h2 class="text-3xl font-black text-white mb-4">Chinese Merken en Hun Succes</h2>
-        <p class="text-gray-300 mb-4">Focus op opkomende Chinese merken die wereldwijd populair zijn, zoals Huawei, Xiaomi of Alibaba.</p>
-        <p class="text-gray-400 text-sm">Analyseer hun marketingstrategieën en waarom ze succesvol zijn in buitenlandse markten.</p>
-        </div>
-      </div>
-      </div>
-
-      <!-- Section 5: Cultural Influences -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-        <h2 class="text-3xl font-black text-white mb-4">Culturele Invloeden</h2>
-        <p class="text-gray-300 mb-4">Verken hoe Chinese cultuur de producten beïnvloedt die in China worden gemaakt.</p>
-        <p class="text-gray-400 text-sm">Onderzoek hoe westerse invloeden zich bij de productie in China hebben doorgezet.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1545371334-40abb2eec4a7?q=80&w=800" alt="Cultural Influences" class="rounded-2xl shadow-2xl"/>
-      </div>
-      </div>
-
-      <!-- Section 6: Technology -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <img src="https://images.unsplash.com/photo-1677442d019cecf8e5aa1f2b6c28bd7fb5db4e5d?q=80&w=800" alt="Technology Innovation" class="rounded-2xl shadow-2xl order-2 md:order-1"/>
-        <div class="order-1 md:order-2">
-        <h2 class="text-3xl font-black text-white mb-4">Technologische Innovaties</h2>
-        <p class="text-gray-300 mb-4">Bespreek de technologische vooruitgang in de Chinese industrie, zoals robotica en automatisering.</p>
-        <p class="text-gray-400 text-sm">Voorbeeldstudies van innovatieve Chinese startups die de industrie transformeren.</p>
-        </div>
-      </div>
-      </div>
-
-      <!-- Section 7: Ethics -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-        <h2 class="text-3xl font-black text-white mb-4">Ethische Vraagstukken</h2>
-        <p class="text-gray-300 mb-4">Onderzoek de arbeidsomstandigheden in fabrieken en de impact op werknemers.</p>
-        <p class="text-gray-400 text-sm">Discussieer over het begrip 'fair trade' en wat dit betekent voor producten die in China worden gemaakt.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800" alt="Ethics" class="rounded-2xl shadow-2xl"/>
-      </div>
-      </div>
-
-      <!-- Section 8: Future Trends -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800" alt="Future Trends" class="rounded-2xl shadow-2xl order-2 md:order-1"/>
-        <div class="order-1 md:order-2">
-        <h2 class="text-3xl font-black text-white mb-4">Toekomstige Trends</h2>
-        <p class="text-gray-300 mb-4">Analyseer de toekomst van "Made in China," inclusief verschuivingen naar meer lokale productie.</p>
-        <p class="text-gray-400 text-sm">Onderzoek opkomende markten en nieuwe gebieden van productie in China.</p>
-        </div>
-      </div>
-      </div>
-
-      <!-- Section 9: Product Comparison -->
-      <div class="mb-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-        <h2 class="text-3xl font-black text-white mb-4">Een Vergelijking van Producten</h2>
-        <p class="text-gray-300 mb-4">Maak een vergelijkende analyse van Chinese producten met gelijkaardige producten uit andere landen.</p>
-        <p class="text-gray-400 text-sm">Focus op prijs, kwaliteit, en consumententevredenheid.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800" alt="Product Comparison" class="rounded-2xl shadow-2xl"/>
-      </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="bg-gray-950 text-gray-400 py-12 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div class="col-span-1 md:col-span-1">
             <div class="flex items-center gap-2 mb-4">
-              <img
-                src="./assets/logo.png"
-                alt="Logo"
-                class="h-6 w-auto brightness-200"
-              />
               <span class="text-white font-black tracking-tighter text-lg"
-                >NAAM</span
+                >BRAM & JORIS</span
               >
             </div>
-            <p class="text-sm leading-relaxed">
-              Bram en Joris hebben een leuke website gemaakt over het Chinees
-              project "Made in China".
+            <p class="text-sm leading-relaxed text-gray-500">
+              Een schoolproject over de invloed van China op de wereldwijde
+              productiemarkt. Gemaakt met bloed, zweet en pixels.
             </p>
           </div>
 
@@ -387,13 +372,13 @@
             >
               Contact
             </h4>
-            <p class="text-sm mb-4 italic">
-              Vragen? Stuur ons een duif of een mailtje.
+            <p class="text-sm mb-4 italic text-gray-500">
+              Cijfer te laag? Stuur een klacht.
             </p>
             <a
-              href="mailto:chinees@mail.com"
+              href="mailto:bramenjoris@schoolproject.nl"
               class="text-white font-medium hover:text-sky-500 transition-colors"
-              >info@chinees.com</a
+              >contact@bramenjoris.nl</a
             >
           </div>
         </div>
@@ -401,11 +386,9 @@
         <div
           class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs"
         >
-          <p data-editable>
-            &copy; 2025 Chinees Project. Alle rechten voorbehouden.
-          </p>
+          <p>&copy; 2025 Bram & Joris. Alle rechten voorbehouden.</p>
           <div class="flex gap-6 uppercase tracking-widest">
-            <span class="text-white/20">Handgecodeerd in NL</span>
+            <span class="text-white/20">Gemaakt in Nederland</span>
           </div>
         </div>
       </div>
@@ -421,27 +404,21 @@
       btn.addEventListener("click", () => {
         isMenuOpen = !isMenuOpen;
 
-        // Toggle Menu met soepele slide
         if (isMenuOpen) {
           menu.classList.remove("translate-x-full");
-          document.body.classList.add("overflow-hidden"); // Stop scrollen
-
-          // Icoontjes animeren
+          document.body.classList.add("overflow-hidden");
           iconOpen.classList.add("hidden");
           iconClose.classList.remove("hidden");
-          setTimeout(() => iconClose.classList.remove("rotate-90"), 50); // Draai effect
+          setTimeout(() => iconClose.classList.remove("rotate-90"), 50);
         } else {
           menu.classList.add("translate-x-full");
           document.body.classList.remove("overflow-hidden");
-
-          // Icoontjes animeren
           iconClose.classList.add("rotate-90");
           iconClose.classList.add("hidden");
           iconOpen.classList.remove("hidden");
         }
       });
 
-      // Sluit menu als je op een link klikt (gebruiksvriendelijkheid enzo)
       menu.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
           if (isMenuOpen) btn.click();
@@ -450,3 +427,4 @@
     </script>
   </body>
 </html>
+s
