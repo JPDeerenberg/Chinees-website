@@ -1,50 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bram & Joris Chinees Project website</title>
-    <meta
-      name="description"
-      content="Hier een tekst van ongeveer 150 tekens die mensen overtuigt om te klikken in plaats van door te scrollen naar je concurrent."
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.jouwdomein.nl/" />
-
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Jouw Geniale Website | Handgecodeerd Meesterwerk"
-    />
-    <meta
-      property="og:description"
-      content="Weg met WordPress. Puur Tailwind vakmanschap. Klik hier voor echte snelheid."
-    />
-    <meta
-      property="og:image"
-      content="https://www.jouwdomein.nl/assets/og-image.jpg"
-    />
-    <meta property="og:url" content="https://www.jouwdomein.nl/" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jouw Geniale Website" />
-    <meta
-      name="twitter:description"
-      content="Geen plugins, alleen pure code en een flinke dosis eigenwijsheid."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.jouwdomein.nl/assets/og-image.jpg"
-    />
-
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
-
+    <title>Contact - Bram & Joris</title>
+    <meta name="description" content="Neem contact op met Bram en Joris." />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-800 flex flex-col min-h-screen">
-    <!-- Navbar -->
+  <body class="bg-gray-800 flex flex-col min-h-screen font-sans text-gray-100">
     <nav
       class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-white/10 h-16 transition-all duration-300"
     >
@@ -88,7 +52,7 @@
         >
           <svg
             id="icon-open"
-            class="w-7 h-7 transition-transform duration-300"
+            class="w-7 h-7"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -102,7 +66,7 @@
           </svg>
           <svg
             id="icon-close"
-            class="w-7 h-7 hidden transition-transform duration-300 rotate-90"
+            class="w-7 h-7 hidden rotate-90"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -118,41 +82,28 @@
       </div>
     </nav>
 
-    <!-- Div for JS-->
     <div
       id="mobile-menu"
-      class="fixed inset-0 z-40 bg-gray-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-2xl font-bold text-white transition-transform duration-500 cubic-bezier(0.4, 0, 0.2, 1) translate-x-full pt-16"
+      class="fixed inset-0 z-40 bg-gray-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-2xl font-bold text-white transition-transform duration-500 translate-x-full pt-16"
     >
-      <a
-        href="index.html"
-        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
-        >Home</a
-      >
-      <a
-        href="about.html"
-        class="hover:text-sky-500 transition-colors transform hover:scale-110 duration-200"
-        >About</a
-      >
-      <a
-        href="contact.html"
-        class="text-sky-500 hover:text-sky-400 transition-colors transform hover:scale-110 duration-200"
-        >Contact</a
-      >
+      <a href="index.html" class="hover:text-sky-500">Home</a>
+      <a href="about.html" class="hover:text-sky-500">Over Made In China</a>
+      <a href="contact.html" class="text-sky-500">Contact</a>
     </div>
 
     <main class="flex-1">
       <section class="flex items-center justify-center py-24">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold mb-4 text-white">Neem nu contact op</h1>
+        <div class="text-center px-4">
+          <h1 class="text-4xl font-bold mb-4 text-white">Contact</h1>
           <p class="text-slate-400 max-w-xl mx-auto">
-            Gebruik dit of stuur een mail naar bas.brouwmans@raarmail.be
+            Vragen over het project? Of heb je een fout gevonden in mijn code?
+            (Vast niet).
           </p>
         </div>
       </section>
 
-      <!-- Functional Form Flexbox -->
       <section
-        class="max-w-md mx-auto px-8 py-12 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl relative overflow-hidden"
+        class="max-w-md mx-auto px-8 py-12 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl relative overflow-hidden mb-20"
       >
         <div
           class="absolute -top-24 -left-24 w-48 h-48 bg-sky-500/10 blur-3xl rounded-full"
@@ -160,17 +111,14 @@
 
         <div class="relative z-10">
           <h2 class="text-3xl font-black text-white mb-2 tracking-tighter">
-            Stuur ons een mail
+            Stuur een bericht
           </h2>
           <p class="text-slate-400 text-sm mb-8">
-            Heb je een vraag of een compliment, stuur maar een mailtje!
+            Vul het formulier in en we reageren sneller dan een AliExpress
+            levering.
           </p>
 
-          <form
-            action="https://formspree.io/f/jouw-id"
-            method="POST"
-            class="flex flex-col gap-5"
-          >
+          <form class="flex flex-col gap-5">
             <div class="flex flex-col gap-1.5">
               <label
                 class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1"
@@ -179,7 +127,7 @@
               <input
                 type="text"
                 name="name"
-                placeholder="John Doe"
+                placeholder="Bob de Bouwer"
                 required
                 class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all duration-200"
               />
@@ -193,7 +141,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="john@voorbeeld.nl"
+                placeholder="jouw@email.nl"
                 required
                 class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all duration-200"
               />
@@ -207,7 +155,7 @@
               <textarea
                 name="message"
                 rows="4"
-                placeholder="Waar kunnen we je mee helpen?"
+                placeholder="Vertel ons wat je vindt..."
                 required
                 class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 transition-all duration-200 resize-none"
               ></textarea>
@@ -215,100 +163,55 @@
 
             <button
               type="submit"
-              class="mt-4 px-6 py-4 bg-linear-to-r from-sky-600 to-indigo-600 text-white font-bold rounded-xl shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 hover:-translate-y-0.5 active:scale-95 transition-all duration-200"
+              class="mt-4 px-6 py-4 bg-gradient-to-r from-sky-600 to-indigo-600 text-white font-bold rounded-xl shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 hover:-translate-y-0.5 active:scale-95 transition-all duration-200"
             >
               Verstuur Bericht
             </button>
-
-            <p class="text-center text-xs text-slate-500 mt-4 italic">
-              Geen zorgen, we verkopen je mailadres niet aan Russische hackers.
-              Beloofd.
-            </p>
           </form>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-950 text-gray-400 py-12 border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div class="col-span-1 md:col-span-1">
-            <div class="flex items-center gap-2 mb-4">
-              <img
-                src="./assets/logo.png"
-                alt="Logo"
-                class="h-6 w-auto brightness-200"
-              />
-              <span class="text-white font-black tracking-tighter text-lg"
-                >NAAM</span
-              >
-            </div>
-            <p class="text-sm leading-relaxed">
-              Bram en Joris hebben een leuke website gemaakt over het Chinees
-              project "Made in China".
-            </p>
-          </div>
-
-          <div>
-            <h4
-              class="text-white font-bold mb-4 uppercase text-xs tracking-widest"
-            >
-              Navigatie
-            </h4>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a
-                  href="index.html"
-                  class="hover:text-sky-500 transition-colors"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="about.html"
-                  class="hover:text-sky-500 transition-colors"
-                  >Over Ons</a
-                >
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  class="hover:text-sky-500 transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4
-              class="text-white font-bold mb-4 uppercase text-xs tracking-widest"
-            >
-              Contact
-            </h4>
-            <p class="text-sm mb-4 italic">
-              Vragen? Stuur ons een duif of een mailtje.
-            </p>
-            <a
-              href="mailto:chinees@mail.com"
-              class="text-white font-medium hover:text-sky-500 transition-colors"
-              >info@chinees.com</a
-            >
-          </div>
-        </div>
-
         <div
-          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs"
+          class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs"
         >
-          <p data-editable>
-            &copy; 2025 Chinees Project. Alle rechten voorbehouden.
-          </p>
-          <div class="flex gap-6 uppercase tracking-widest">
-            <span class="text-white/20">Handgecodeerd in NL</span>
-          </div>
+          <p>&copy; 2025 Bram & Joris. Handgecodeerd in NL.</p>
         </div>
       </div>
     </footer>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      let isMenuOpen = false;
+
+      btn.addEventListener("click", () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+          menu.classList.remove("translate-x-full");
+          document.body.classList.add("overflow-hidden");
+          iconOpen.classList.add("hidden");
+          iconClose.classList.remove("hidden");
+          setTimeout(() => iconClose.classList.remove("rotate-90"), 50);
+        } else {
+          menu.classList.add("translate-x-full");
+          document.body.classList.remove("overflow-hidden");
+          iconClose.classList.add("rotate-90");
+          iconClose.classList.add("hidden");
+          iconOpen.classList.remove("hidden");
+        }
+      });
+
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (isMenuOpen) btn.click();
+        });
+      });
+    </script>
   </body>
 </html>
+s
