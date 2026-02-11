@@ -114,11 +114,11 @@
             Stuur een bericht
           </h2>
           <p class="text-slate-400 text-sm mb-8">
-            Vul het formulier in en we reageren sneller dan een bol.com
+            Vul het formulier in en we reageren sneller dan een AliExpress
             levering.
           </p>
 
-          <form class="flex flex-col gap-5">
+          <form id="contact-form" class="flex flex-col gap-5">
             <div class="flex flex-col gap-1.5">
               <label
                 class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1"
@@ -277,6 +277,20 @@
           if (isMenuOpen) btn.click();
         });
       });
+
+      const contactForm = document.getElementById("contact-form");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          alert(
+            "Bedankt voor je bericht! (Dit formulier werkt niet echt, je kan wel een postduif sturen!)."
+          );
+
+          contactForm.reset();
+        });
+      }
     </script>
   </body>
 </html>
